@@ -197,9 +197,12 @@ body {
                     }
 
                     #completed {
+                        min-width: 22px;
+                        min-height: 22px;
+
                         & input {
-                            width: 25px;
-                            height: 25px;
+                            min-width: 22px;
+                            min-height: 22px;
                             border-radius: 50%;
                             vertical-align: middle;
                             border: 1px solid var(--color-4);
