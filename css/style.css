@@ -62,11 +62,16 @@ body {
             z-index: 1;
             height: 200px;
             align-items: center;
+
+            & svg {
+                width: 170px;
+                height: 170px;
+            }
         }
     }
 
     #main {
-        padding-bottom: 20px;
+        max-height: 100vh;
 
         #filter {
             transform: translateY(-26px);
@@ -116,6 +121,8 @@ body {
         }
 
         #show-length {
+            padding-bottom: 20px;
+
             .show-top {
                 display: flex;
                 justify-content: space-between;
@@ -268,6 +275,11 @@ body {
 
             .logo {
                 height: 150px;
+
+                & svg{
+                    width: 140px;
+                    height: 140px;
+                }
             }
         }
 
