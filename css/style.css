@@ -174,6 +174,7 @@ body {
                 display: flex;
                 flex-direction: column;
                 gap: 15px;
+                transition: 500ms all;
 
                 & li {
                     display: flex;
@@ -183,26 +184,19 @@ body {
                     border: 1px solid rgba(255, 255, 255, 0.1);
                     border-radius: 10px;
                     padding: 15px;
-                    position: relative;
                     transition: 500ms all;
-                    text-decoration: line-through;
-                    opacity: 0.5;
-                    transform: scale(0.98);
 
-                    &.pending {
-                        transform: scale(1);
-                        opacity: 1;
-                        text-decoration: none;
+                    &.completed {
+                        transform: scale(0.97);
+                        opacity: 0.8;
+
+                        & p {
+                            text-decoration: line-through;
+                        }
+
                     }
 
-
-                    & button {
-                        background: transparent;
-                        border: none;
-                        cursor: pointer;
-                        position: relative;
-                        z-index: 2;
-
+                    #completed {
                         & input {
                             width: 25px;
                             height: 25px;
@@ -222,6 +216,26 @@ body {
                                 accent-color: var(--color-4);
                             }
                         }
+                    }
+
+
+                    &.pending {
+                        transform: scale(1);
+                        opacity: 1;
+                        text-decoration: none;
+                    }
+
+                    .task-edits {
+                        display: flex;
+                        gap: 10px;
+                    }
+
+                    & button {
+                        background: transparent;
+                        border: none;
+                        cursor: pointer;
+                        position: relative;
+                        z-index: 2;
 
                         & svg {
                             width: 23px;
@@ -276,7 +290,7 @@ body {
             .logo {
                 height: 150px;
 
-                & svg{
+                & svg {
                     width: 140px;
                     height: 140px;
                 }
