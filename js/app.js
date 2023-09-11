@@ -100,4 +100,11 @@ const displayTask = () => {
 
 displayTask()
 showCounts()
-createButton.addEventListener('click', addTask)
+
+input.addEventListener('keyup', (event) => {
+    if (event.key === 'Enter') {
+        addTask();
+    }
+});
+
+createButton.addEventListener('click', addTask);
