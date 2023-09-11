@@ -215,7 +215,6 @@ body {
 
                             &:checked {
                                 appearance: auto;
-                                clip-path: circle(50% at 50% 50%);
                                 accent-color: var(--color-4);
                             }
                         }
@@ -305,7 +304,7 @@ body {
                 transform: translateY(-26px);
 
                 & input {
-                    height: 45px;
+                    height: 40px;
                     font-size: 16px;
 
                     &::placeholder {
@@ -314,7 +313,7 @@ body {
                 }
 
                 & button {
-                    height: 45px;
+                    height: 40px;
                     font-size: 16px;
                 }
             }
